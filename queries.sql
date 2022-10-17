@@ -5,7 +5,9 @@
     skills varchar(255)
     */
 -- Part 2: Test it with SQL
-
+SELECT name FROM employer WHERE location = "St. Louis City";
 -- Part 3: Test it with SQL
-
+Drop table job;
 -- Part 4: Test it with SQL
+Select * from skill left join job_skills on skill.id = job_skills.skills_id where job_skills.jobs_id is not null order by name asc;
+
